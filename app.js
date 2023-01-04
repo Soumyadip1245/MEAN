@@ -9,10 +9,10 @@ var cors = require('cors')
 
 mongoose.connect('mongodb+srv://Soumyadip:20csu214@cluster0.jm2zckm.mongodb.net/MEAN?retryWrites=true&w=majority',(err)=>{
     if(err){
-        console.warn("Error In Database Connection")
+        console.log("Error In Database Connection")
     }
     else{
-        console.warn("Database Connected")
+        console.log("Database Connected")
     }
 })
 app.use(cors())
